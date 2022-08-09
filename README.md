@@ -5,4 +5,4 @@
 
 - criar um componente Lista com dois cursos
 
-https://cursos.alura.com.br/course/react-modernizando-escrever-typescript/task/97625
+https://cursos.alura.com.br/course/react-modernizando-escrever-typescript/task/97630

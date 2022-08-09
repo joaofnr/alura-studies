@@ -23,8 +23,11 @@ class Form extends React.Component {
                         id="duracao"
                         name="duracao"
                         placeholder="Duração"
-                        type="text" /></p>
-                <Botao />
+                        type="time"
+                        step="1" /></p>
+                <Botao>
+                    Adicionar
+                </Botao>
             </form >
         )
     }
