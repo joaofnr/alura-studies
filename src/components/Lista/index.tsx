@@ -1,22 +1,13 @@
 import style from './Lista.module.scss';
 import Item from './Item';
+import { ITarefa } from '../../types/tarefa';
 
-function Lista() {
-    const items = [
-        {
-            nome: 'React',
-            duracao: '01:20'
-        },
-        {
-            nome: 'TypeScript',
-            duracao: '01:20'
-        }
-    ]
+function Lista({ tarefas }: { tarefas: ITarefa[] }) {
     return (
         <aside className={style.listaTarefas}>
             <h2>Estudos do dia</h2>
             <ul>
-                {items.map((i, x) => (
+                {tarefas.map((i, x) => (
                     <Item
                         key={x}
                         {...i}

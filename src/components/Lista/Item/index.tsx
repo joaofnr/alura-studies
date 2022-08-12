@@ -1,9 +1,11 @@
+import { ITarefa } from '../../../types/tarefa';
 import style from '../Lista.module.scss';
 
-export default function Item({ nome, duracao }: { nome: string, duracao: string }) {
+export default function Item({ curso, duracao, selecionado, completado, id }: ITarefa) {
+    console.log('Item adicionado: ', { curso, duracao, selecionado, completado, id })
     return (
         <li className={style.item} >
-            <h3>{nome}</h3>
+            <h3>{curso}</h3>
             <span>{duracao}</span>
         </li >
     )
