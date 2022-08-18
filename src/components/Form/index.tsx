@@ -9,7 +9,7 @@ class Form extends React.Component<{
 }>{
     state = {
         curso: '',
-        duracao: ''
+        duracao: '01:00:00'
     }
 
     adicionarCurso(event: React.FormEvent<HTMLFormElement>) {
@@ -25,7 +25,7 @@ class Form extends React.Component<{
         ])
         this.setState({
             curso: '',
-            duracao: ''
+            duracao: '01:00:00'
         })
     }
     render() {
@@ -64,9 +64,7 @@ class Form extends React.Component<{
                                 duracao: evento.target.value
                             })
                         }
-                        placeholder="Duração"
-                        type="time"
-                        step="1" /></p>
+                        placeholder="Duração" /></p>
                 <Botao type={'submit'}>
                     Adicionar
                 </Botao>
